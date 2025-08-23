@@ -1,6 +1,6 @@
 from tabnanny import verbose
 from src.DataScienceProject.utils.common import create_directories, read_yaml
-from src.DataScienceProject.entity.config_entity import DataIngestionConfig, DataValidationConfig
+from src.DataScienceProject.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig
 from src.DataScienceProject.constants import *
 
 class ConfigurationManager:
@@ -43,3 +43,15 @@ class ConfigurationManager:
         )
 
         return data_validation_config
+
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+        config = self.config.data_transformation
+
+        create_directories([config.root_dir],verbose=True)
+
+        data_transformation_config = DataTransformationConfig(
+            root_dir=config.root_dir,
+            data_path=config.data_path
+        )
+
+        return data_transformation_config
