@@ -666,3 +666,1041 @@ NameError: name 'loger' is not defined
 [2025-08-23 12:06:53,371: INFO: data_transformation: Train shape: (1199, 12)]
 [2025-08-23 12:06:53,372: INFO: data_transformation: Test  shape: (400, 12)]
 [2025-08-23 12:06:53,372: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 15:50:45,306: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 15:50:45,313: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 15:50:45,318: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 15:50:45,324: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 15:50:45,326: INFO: common: Directory created at artifacts]
+[2025-08-23 15:50:45,327: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 15:50:45,327: INFO: data_ingestion: File already exists]
+[2025-08-23 15:50:45,344: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 15:50:45,344: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 15:50:45,345: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 15:50:45,369: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 15:50:45,376: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 15:50:45,391: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 15:50:45,397: INFO: common: Directory created at artifacts]
+[2025-08-23 15:50:45,400: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 15:50:45,541: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 15:50:45,542: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 15:50:45,556: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 15:50:45,559: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 15:50:45,565: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 15:50:45,567: INFO: common: Directory created at artifacts]
+[2025-08-23 15:50:45,571: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 15:50:45,667: INFO: data_transformation: Spliting completed]
+[2025-08-23 15:50:45,669: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 15:50:45,670: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 15:50:45,672: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 15:50:45,672: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 15:50:45,673: ERROR: main: name 'ModelTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 49, in <module>
+    obj = ModelTrainingPipeline()
+          ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'ModelTrainingPipeline' is not defined
+[2025-08-23 15:51:28,883: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 15:51:28,891: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 15:51:28,894: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 15:51:28,904: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 15:51:28,906: INFO: common: Directory created at artifacts]
+[2025-08-23 15:51:28,907: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 15:51:28,908: INFO: data_ingestion: File already exists]
+[2025-08-23 15:51:28,942: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 15:51:28,943: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 15:51:28,943: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 15:51:28,974: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 15:51:28,978: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 15:51:29,006: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 15:51:29,012: INFO: common: Directory created at artifacts]
+[2025-08-23 15:51:29,017: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 15:51:29,133: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 15:51:29,134: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 15:51:29,142: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 15:51:29,146: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 15:51:29,154: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 15:51:29,156: INFO: common: Directory created at artifacts]
+[2025-08-23 15:51:29,158: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 15:51:29,226: INFO: data_transformation: Spliting completed]
+[2025-08-23 15:51:29,227: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 15:51:29,234: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 15:51:29,235: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 15:51:29,235: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 15:51:29,245: ERROR: main: ModelTrainerPipeline.initiate_model_trainer_pipeline() takes 0 positional arguments but 1 was given]
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+TypeError: ModelTrainerPipeline.initiate_model_trainer_pipeline() takes 0 positional arguments but 1 was given
+[2025-08-23 15:56:13,838: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 15:56:13,877: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 15:56:13,923: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 15:56:13,965: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 15:56:13,967: INFO: common: Directory created at artifacts]
+[2025-08-23 15:56:13,968: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 15:56:13,969: INFO: data_ingestion: File already exists]
+[2025-08-23 15:56:13,977: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 15:56:13,978: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 15:56:13,980: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 15:56:14,034: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 15:56:14,092: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 15:56:14,098: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 15:56:14,101: INFO: common: Directory created at artifacts]
+[2025-08-23 15:56:14,102: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 15:56:14,217: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 15:56:14,220: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 15:56:14,239: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 15:56:14,244: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 15:56:14,258: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 15:56:14,261: INFO: common: Directory created at artifacts]
+[2025-08-23 15:56:14,263: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 15:56:14,369: INFO: data_transformation: Spliting completed]
+[2025-08-23 15:56:14,372: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 15:56:14,373: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 15:56:14,374: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 15:56:14,375: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 15:56:14,386: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 15:56:14,406: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 15:56:14,442: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 15:56:14,445: INFO: common: Directory created at artifacts]
+[2025-08-23 15:56:14,458: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 15:56:14,466: ERROR: main: "'ConfigBox' object has no attribute 'train_path'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'train_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'train_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'train_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'train_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'train_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'train_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'train_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 16, in initiate_model_trainer_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 12, in initiate_model_trainer_pipeline
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\config\configuration.py", line 68, in get_model_trainer_config
+    train_path = config.train_path,
+                 ^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'train_path'"
+[2025-08-23 15:58:37,901: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 15:58:37,909: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 15:58:37,914: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 15:58:37,926: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 15:58:37,929: INFO: common: Directory created at artifacts]
+[2025-08-23 15:58:37,937: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 15:58:37,947: INFO: data_ingestion: File already exists]
+[2025-08-23 15:58:37,994: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 15:58:38,015: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 15:58:38,055: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 15:58:38,125: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 15:58:38,159: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 15:58:38,207: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 15:58:38,215: INFO: common: Directory created at artifacts]
+[2025-08-23 15:58:38,229: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 15:58:38,308: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 15:58:38,311: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 15:58:38,324: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 15:58:38,330: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 15:58:38,356: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 15:58:38,405: INFO: common: Directory created at artifacts]
+[2025-08-23 15:58:38,442: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 15:58:38,604: INFO: data_transformation: Spliting completed]
+[2025-08-23 15:58:38,605: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 15:58:38,616: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 15:58:38,619: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 15:58:38,621: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 15:58:38,638: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 15:58:38,694: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 15:58:38,755: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 15:58:38,783: INFO: common: Directory created at artifacts]
+[2025-08-23 15:58:38,834: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 15:58:38,874: ERROR: main: "'ConfigBox' object has no attribute 'train_path'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'train_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'train_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'train_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'train_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'train_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'train_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'train_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 16, in initiate_model_trainer_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 12, in initiate_model_trainer_pipeline
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\config\configuration.py", line 68, in get_model_trainer_config
+    train_data_path = config.train_path,
+                      ^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'train_path'"
+[2025-08-23 16:01:18,706: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 16:01:18,714: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:01:18,717: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:01:18,722: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:01:18,723: INFO: common: Directory created at artifacts]
+[2025-08-23 16:01:18,725: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 16:01:18,726: INFO: data_ingestion: File already exists]
+[2025-08-23 16:01:18,735: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 16:01:18,736: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 16:01:18,737: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 16:01:18,760: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:01:18,775: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:01:18,792: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:01:18,797: INFO: common: Directory created at artifacts]
+[2025-08-23 16:01:18,809: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 16:01:18,914: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 16:01:18,914: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 16:01:18,923: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:01:18,925: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:01:18,933: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:01:18,934: INFO: common: Directory created at artifacts]
+[2025-08-23 16:01:18,935: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 16:01:19,037: INFO: data_transformation: Spliting completed]
+[2025-08-23 16:01:19,037: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 16:01:19,037: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 16:01:19,037: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 16:01:19,039: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 16:01:19,046: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:01:19,050: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:01:19,056: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:01:19,057: INFO: common: Directory created at artifacts]
+[2025-08-23 16:01:19,058: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 16:01:19,059: ERROR: main: "'ConfigBox' object has no attribute 'trget_column'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'trget_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'trget_column'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'trget_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'trget_column'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'trget_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'trget_column'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'trget_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 16, in initiate_model_trainer_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 12, in initiate_model_trainer_pipeline
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\config\configuration.py", line 73, in get_model_trainer_config
+    target_column = schema.trget_column
+                    ^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'trget_column'"
+[2025-08-23 16:02:43,644: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 16:02:43,654: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:02:43,656: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:02:43,662: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:02:43,665: INFO: common: Directory created at artifacts]
+[2025-08-23 16:02:43,666: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 16:02:43,667: INFO: data_ingestion: File already exists]
+[2025-08-23 16:02:43,678: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 16:02:43,683: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 16:02:43,685: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 16:02:43,712: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:02:43,715: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:02:43,724: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:02:43,727: INFO: common: Directory created at artifacts]
+[2025-08-23 16:02:43,728: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 16:02:43,839: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 16:02:43,842: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 16:02:43,873: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:02:43,876: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:02:43,898: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:02:43,902: INFO: common: Directory created at artifacts]
+[2025-08-23 16:02:43,903: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 16:02:43,964: INFO: data_transformation: Spliting completed]
+[2025-08-23 16:02:43,971: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 16:02:43,974: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 16:02:43,977: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 16:02:43,978: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 16:02:43,986: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:02:43,990: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:02:44,005: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:02:44,010: INFO: common: Directory created at artifacts]
+[2025-08-23 16:02:44,013: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 16:02:44,014: ERROR: main: "'ConfigBox' object has no attribute 'target_column'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'TARGET_COLUMN'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'TARGET_COLUMN'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'TARGET_COLUMN'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'TARGET_COLUMN'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'target_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'target_column'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'target_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 16, in initiate_model_trainer_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 12, in initiate_model_trainer_pipeline
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\config\configuration.py", line 73, in get_model_trainer_config
+    target_column = schema.TARGET_COLUMN
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'target_column'"
+[2025-08-23 16:04:31,076: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 16:04:31,086: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:04:31,090: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:04:31,095: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:04:31,098: INFO: common: Directory created at artifacts]
+[2025-08-23 16:04:31,100: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 16:04:31,101: INFO: data_ingestion: File already exists]
+[2025-08-23 16:04:31,114: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 16:04:31,115: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 16:04:31,126: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 16:04:31,148: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:04:31,181: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:04:31,196: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:04:31,199: INFO: common: Directory created at artifacts]
+[2025-08-23 16:04:31,205: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 16:04:31,291: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 16:04:31,295: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 16:04:31,312: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:04:31,321: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:04:31,331: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:04:31,344: INFO: common: Directory created at artifacts]
+[2025-08-23 16:04:31,351: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 16:04:31,482: INFO: data_transformation: Spliting completed]
+[2025-08-23 16:04:31,483: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 16:04:31,484: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 16:04:31,486: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 16:04:31,486: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 16:04:31,497: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:04:31,502: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:04:31,522: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:04:31,528: INFO: common: Directory created at artifacts]
+[2025-08-23 16:04:31,538: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 16:04:31,546: ERROR: main: "'ConfigBox' object has no attribute 'target_column'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'TARGET_COLUMN'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'TARGET_COLUMN'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'TARGET_COLUMN'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'TARGET_COLUMN'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'target_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'target_column'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'target_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 16, in initiate_model_trainer_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 12, in initiate_model_trainer_pipeline
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\config\configuration.py", line 73, in get_model_trainer_config
+    target_column = schema.TARGET_COLUMN
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'target_column'"
+[2025-08-23 16:05:46,247: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 16:05:46,256: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:05:46,259: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:05:46,266: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:05:46,269: INFO: common: Directory created at artifacts]
+[2025-08-23 16:05:46,270: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 16:05:46,271: INFO: data_ingestion: File already exists]
+[2025-08-23 16:05:46,282: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 16:05:46,284: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 16:05:46,284: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 16:05:46,307: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:05:46,337: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:05:46,378: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:05:46,387: INFO: common: Directory created at artifacts]
+[2025-08-23 16:05:46,391: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 16:05:46,499: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 16:05:46,500: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 16:05:46,508: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:05:46,512: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:05:46,517: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:05:46,519: INFO: common: Directory created at artifacts]
+[2025-08-23 16:05:46,520: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 16:05:46,625: INFO: data_transformation: Spliting completed]
+[2025-08-23 16:05:46,626: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 16:05:46,627: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 16:05:46,627: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 16:05:46,630: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 16:05:46,636: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:05:46,641: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:05:46,649: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:05:46,651: INFO: common: Directory created at artifacts]
+[2025-08-23 16:05:46,652: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 16:05:46,653: ERROR: main: name 'slef' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 16, in initiate_model_trainer_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 13, in initiate_model_trainer_pipeline
+    model_trainer = ModelTrainer(config = model_trainer_config)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\components\model_trainer.py", line 10, in __init__
+    slef.config = ModelTrainerConfig
+    ^^^^
+NameError: name 'slef' is not defined
+[2025-08-23 16:07:00,587: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 16:07:00,595: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:07:00,597: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:07:00,604: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:07:00,606: INFO: common: Directory created at artifacts]
+[2025-08-23 16:07:00,606: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 16:07:00,608: INFO: data_ingestion: File already exists]
+[2025-08-23 16:07:00,620: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 16:07:00,620: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 16:07:00,637: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 16:07:00,670: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:07:00,674: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:07:00,692: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:07:00,703: INFO: common: Directory created at artifacts]
+[2025-08-23 16:07:00,705: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 16:07:00,814: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 16:07:00,814: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 16:07:00,821: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:07:00,823: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:07:00,829: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:07:00,830: INFO: common: Directory created at artifacts]
+[2025-08-23 16:07:00,832: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 16:07:00,925: INFO: data_transformation: Spliting completed]
+[2025-08-23 16:07:00,925: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 16:07:00,926: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 16:07:00,927: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 16:07:00,928: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 16:07:00,936: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:07:00,941: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:07:00,951: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:07:00,954: INFO: common: Directory created at artifacts]
+[2025-08-23 16:07:00,955: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 16:07:00,956: ERROR: main: name 'read_csv' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 16, in initiate_model_trainer_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 14, in initiate_model_trainer_pipeline
+    model_trainer.train()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\components\model_trainer.py", line 13, in train
+    train_data = read_csv(self.config.train_data_path)
+                 ^^^^^^^^
+NameError: name 'read_csv' is not defined
+[2025-08-23 16:07:28,137: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 16:07:28,142: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:07:28,144: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:07:28,147: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:07:28,148: INFO: common: Directory created at artifacts]
+[2025-08-23 16:07:28,151: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 16:07:28,152: INFO: data_ingestion: File already exists]
+[2025-08-23 16:07:28,168: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 16:07:28,174: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 16:07:28,174: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 16:07:28,214: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:07:28,247: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:07:28,298: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:07:28,335: INFO: common: Directory created at artifacts]
+[2025-08-23 16:07:28,337: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 16:07:28,474: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 16:07:28,475: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 16:07:28,486: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:07:28,491: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:07:28,496: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:07:28,497: INFO: common: Directory created at artifacts]
+[2025-08-23 16:07:28,497: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 16:07:28,623: INFO: data_transformation: Spliting completed]
+[2025-08-23 16:07:28,624: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 16:07:28,625: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 16:07:28,626: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 16:07:28,627: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 16:07:28,635: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:07:28,637: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:07:28,642: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:07:28,645: INFO: common: Directory created at artifacts]
+[2025-08-23 16:07:28,646: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 16:07:28,646: ERROR: main: type object 'ModelTrainerConfig' has no attribute 'train_data_path']
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 16, in initiate_model_trainer_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 14, in initiate_model_trainer_pipeline
+    model_trainer.train()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\components\model_trainer.py", line 13, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ModelTrainerConfig' has no attribute 'train_data_path'
+[2025-08-23 16:08:13,836: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 16:08:13,845: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:08:13,848: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:08:13,853: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:08:13,854: INFO: common: Directory created at artifacts]
+[2025-08-23 16:08:13,855: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 16:08:13,856: INFO: data_ingestion: File already exists]
+[2025-08-23 16:08:13,866: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 16:08:13,867: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 16:08:13,868: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 16:08:13,905: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:08:13,912: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:08:13,922: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:08:13,924: INFO: common: Directory created at artifacts]
+[2025-08-23 16:08:13,925: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 16:08:14,123: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 16:08:14,144: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 16:08:14,195: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:08:14,219: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:08:14,323: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:08:14,339: INFO: common: Directory created at artifacts]
+[2025-08-23 16:08:14,356: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 16:08:14,478: INFO: data_transformation: Spliting completed]
+[2025-08-23 16:08:14,479: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 16:08:14,480: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 16:08:14,480: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 16:08:14,481: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 16:08:14,486: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:08:14,489: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:08:14,495: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:08:14,497: INFO: common: Directory created at artifacts]
+[2025-08-23 16:08:14,499: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 16:08:14,500: ERROR: main: type object 'ModelTrainerConfig' has no attribute 'train_path']
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 16, in initiate_model_trainer_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 14, in initiate_model_trainer_pipeline
+    model_trainer.train()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\components\model_trainer.py", line 13, in train
+    train_data = pd.read_csv(self.config.train_path)
+                             ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ModelTrainerConfig' has no attribute 'train_path'
+[2025-08-23 16:22:52,460: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 16:22:52,472: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:22:52,477: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:22:52,485: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:22:52,552: INFO: common: Directory created at artifacts]
+[2025-08-23 16:22:52,578: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 16:22:52,584: INFO: data_ingestion: File already exists]
+[2025-08-23 16:22:52,694: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 16:22:52,695: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 16:22:52,695: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 16:22:52,705: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:22:52,709: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:22:52,720: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:22:52,724: INFO: common: Directory created at artifacts]
+[2025-08-23 16:22:52,726: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 16:22:52,872: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 16:22:52,874: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 16:22:52,887: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:22:52,912: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:22:52,947: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:22:52,949: INFO: common: Directory created at artifacts]
+[2025-08-23 16:22:52,950: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 16:22:53,132: INFO: data_transformation: Spliting completed]
+[2025-08-23 16:22:53,137: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 16:22:53,140: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 16:22:53,144: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 16:22:53,145: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 16:22:53,155: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:22:53,182: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:22:53,203: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:22:53,218: INFO: common: Directory created at artifacts]
+[2025-08-23 16:22:53,250: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 16:22:53,252: ERROR: main: type object 'ModelTrainerConfig' has no attribute 'train_path']
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 16, in initiate_model_trainer_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 14, in initiate_model_trainer_pipeline
+    model_trainer.train()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\components\model_trainer.py", line 13, in train
+    train_data = pd.read_csv(self.config.train_path)
+                             ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ModelTrainerConfig' has no attribute 'train_path'
+[2025-08-23 16:26:39,938: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 16:26:39,945: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:26:39,947: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:26:39,952: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:26:39,953: INFO: common: Directory created at artifacts]
+[2025-08-23 16:26:39,954: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 16:26:39,955: INFO: data_ingestion: File already exists]
+[2025-08-23 16:26:39,971: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 16:26:39,974: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 16:26:39,981: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 16:26:39,993: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:26:40,000: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:26:40,018: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:26:40,027: INFO: common: Directory created at artifacts]
+[2025-08-23 16:26:40,028: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 16:26:40,111: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 16:26:40,112: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 16:26:40,132: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:26:40,135: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:26:40,146: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:26:40,148: INFO: common: Directory created at artifacts]
+[2025-08-23 16:26:40,153: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 16:26:40,250: INFO: data_transformation: Spliting completed]
+[2025-08-23 16:26:40,251: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 16:26:40,252: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 16:26:40,252: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 16:26:40,253: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 16:26:40,260: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:26:40,263: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:26:40,267: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:26:40,268: INFO: common: Directory created at artifacts]
+[2025-08-23 16:26:40,272: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 16:26:40,402: ERROR: main: unhashable type: "Box"]
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 16, in initiate_model_trainer_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 14, in initiate_model_trainer_pipeline
+    model_trainer.train()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\components\model_trainer.py", line 16, in train
+    train_x = train_data.drop([self.config.target_column], axis=1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\frame.py", line 5588, in drop
+    return super().drop(
+           ^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\generic.py", line 4807, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\generic.py", line 4849, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 7132, in drop
+    indexer = self.get_indexer_for(labels)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 6194, in get_indexer_for
+    return self.get_indexer(target)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3960, in get_indexer
+    return self._get_indexer(target, method, limit, tolerance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3987, in _get_indexer
+    indexer = self._engine.get_indexer(tgt_values)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 351, in pandas._libs.index.IndexEngine.get_indexer
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7139, in pandas._libs.hashtable.PyObjectHashTable.lookup
+  File "box\\box.py", line 385, in box.box.Box.__hash__
+box.exceptions.BoxTypeError: unhashable type: "Box"
+[2025-08-23 16:34:49,423: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 16:34:49,438: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:34:49,462: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:34:49,576: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:34:49,583: INFO: common: Directory created at artifacts]
+[2025-08-23 16:34:49,584: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 16:34:49,585: INFO: data_ingestion: File already exists]
+[2025-08-23 16:34:49,602: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 16:34:49,605: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 16:34:49,605: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 16:34:49,630: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:34:49,648: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:34:49,696: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:34:49,698: INFO: common: Directory created at artifacts]
+[2025-08-23 16:34:49,702: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 16:34:49,811: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 16:34:49,812: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 16:34:49,826: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:34:49,828: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:34:49,833: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:34:49,834: INFO: common: Directory created at artifacts]
+[2025-08-23 16:34:49,836: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 16:34:49,969: INFO: data_transformation: Spliting completed]
+[2025-08-23 16:34:49,970: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 16:34:49,971: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 16:34:49,972: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 16:34:49,973: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 16:34:49,981: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:34:49,984: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:34:49,989: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:34:49,992: INFO: common: Directory created at artifacts]
+[2025-08-23 16:34:49,993: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 16:34:50,174: ERROR: main: '["{\'name\': \'quality\'}"] not found in axis']
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 16, in initiate_model_trainer_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 14, in initiate_model_trainer_pipeline
+    model_trainer.train()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\components\model_trainer.py", line 18, in train
+    train_x = train_data.drop([target_col], axis=1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\frame.py", line 5588, in drop
+    return super().drop(
+           ^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\generic.py", line 4807, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\generic.py", line 4849, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 7136, in drop
+    raise KeyError(f"{labels[mask].tolist()} not found in axis")
+KeyError: '["{\'name\': \'quality\'}"] not found in axis'
+[2025-08-23 16:36:02,464: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 16:36:02,471: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:36:02,475: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:36:02,480: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:36:02,481: INFO: common: Directory created at artifacts]
+[2025-08-23 16:36:02,482: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 16:36:02,482: INFO: data_ingestion: File already exists]
+[2025-08-23 16:36:02,492: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 16:36:02,545: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 16:36:02,595: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 16:36:02,641: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:36:02,677: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:36:02,696: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:36:02,698: INFO: common: Directory created at artifacts]
+[2025-08-23 16:36:02,699: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 16:36:02,825: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 16:36:02,827: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 16:36:02,840: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:36:02,845: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:36:02,853: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:36:02,855: INFO: common: Directory created at artifacts]
+[2025-08-23 16:36:02,856: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 16:36:03,027: INFO: data_transformation: Spliting completed]
+[2025-08-23 16:36:03,027: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 16:36:03,029: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 16:36:03,031: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 16:36:03,034: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 16:36:03,046: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:36:03,103: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:36:03,114: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:36:03,129: INFO: common: Directory created at artifacts]
+[2025-08-23 16:36:03,154: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 16:36:03,178: ERROR: main: "'ConfigBox' object has no attribute 'target_column'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'TARGET_COLUMN'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'TARGET_COLUMN'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'TARGET_COLUMN'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'TARGET_COLUMN'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'target_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'target_column'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'target_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 16, in initiate_model_trainer_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 12, in initiate_model_trainer_pipeline
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\config\configuration.py", line 73, in get_model_trainer_config
+    target_column = schema.TARGET_COLUMN
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'target_column'"
+[2025-08-23 16:38:08,313: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 16:38:08,325: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:38:08,328: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:38:08,337: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:38:08,347: INFO: common: Directory created at artifacts]
+[2025-08-23 16:38:08,351: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 16:38:08,374: INFO: data_ingestion: File already exists]
+[2025-08-23 16:38:08,417: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 16:38:08,564: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 16:38:08,634: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 16:38:08,736: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:38:08,807: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:38:08,877: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:38:08,887: INFO: common: Directory created at artifacts]
+[2025-08-23 16:38:08,892: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 16:38:09,025: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 16:38:09,026: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 16:38:09,037: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:38:09,043: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:38:09,053: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:38:09,055: INFO: common: Directory created at artifacts]
+[2025-08-23 16:38:09,055: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 16:38:09,156: INFO: data_transformation: Spliting completed]
+[2025-08-23 16:38:09,158: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 16:38:09,166: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 16:38:09,171: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 16:38:09,174: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 16:38:09,191: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:38:09,199: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:38:09,262: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:38:09,306: INFO: common: Directory created at artifacts]
+[2025-08-23 16:38:09,334: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 16:38:09,486: ERROR: main: name 'l1r' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 50, in <module>
+    obj.initiate_model_trainer_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 16, in initiate_model_trainer_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelTrainerPipeline.py", line 14, in initiate_model_trainer_pipeline
+    model_trainer.train()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\components\model_trainer.py", line 35, in train
+    joblib.dump(l1r, os.path.join(self.config.root_dir, self.config.model_name))
+                ^^^
+NameError: name 'l1r' is not defined
+[2025-08-23 16:38:46,702: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-23 16:38:46,709: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:38:46,711: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:38:46,716: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:38:46,717: INFO: common: Directory created at artifacts]
+[2025-08-23 16:38:46,718: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-23 16:38:46,722: INFO: data_ingestion: File already exists]
+[2025-08-23 16:38:46,730: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-23 16:38:46,731: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-23 16:38:46,732: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-23 16:38:46,786: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:38:46,792: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:38:46,855: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:38:46,872: INFO: common: Directory created at artifacts]
+[2025-08-23 16:38:46,891: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-23 16:38:47,024: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-23 16:38:47,025: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-23 16:38:47,034: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:38:47,037: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:38:47,046: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:38:47,047: INFO: common: Directory created at artifacts]
+[2025-08-23 16:38:47,049: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-23 16:38:47,160: INFO: data_transformation: Spliting completed]
+[2025-08-23 16:38:47,162: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-23 16:38:47,164: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-23 16:38:47,165: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-23 16:38:47,165: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-23 16:38:47,176: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-23 16:38:47,182: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-23 16:38:47,191: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-23 16:38:47,207: INFO: common: Directory created at artifacts]
+[2025-08-23 16:38:47,211: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-23 16:38:47,371: INFO: main: >>>>> stage Model Training Stage completed >>>>>]
