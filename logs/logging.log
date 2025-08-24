@@ -1704,3 +1704,420 @@ NameError: name 'l1r' is not defined
 [2025-08-23 16:38:47,207: INFO: common: Directory created at artifacts]
 [2025-08-23 16:38:47,211: INFO: common: Directory created at artifacts/model_trainer]
 [2025-08-23 16:38:47,371: INFO: main: >>>>> stage Model Training Stage completed >>>>>]
+[2025-08-24 08:56:40,560: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-24 08:56:40,575: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 08:56:40,583: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 08:56:40,600: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 08:56:40,605: INFO: common: Directory created at artifacts]
+[2025-08-24 08:56:40,607: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-24 08:56:40,617: INFO: data_ingestion: File already exists]
+[2025-08-24 08:56:40,742: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-24 08:56:40,744: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-24 08:56:40,745: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-24 08:56:40,757: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 08:56:40,765: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 08:56:40,920: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 08:56:40,925: INFO: common: Directory created at artifacts]
+[2025-08-24 08:56:40,933: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-24 08:56:41,053: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-24 08:56:41,062: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-24 08:56:41,111: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 08:56:41,123: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 08:56:41,139: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 08:56:41,144: INFO: common: Directory created at artifacts]
+[2025-08-24 08:56:41,151: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-24 08:56:41,355: INFO: data_transformation: Spliting completed]
+[2025-08-24 08:56:41,359: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-24 08:56:41,362: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-24 08:56:41,364: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-24 08:56:41,365: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-24 08:56:41,377: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 08:56:41,380: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 08:56:41,394: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 08:56:41,397: INFO: common: Directory created at artifacts]
+[2025-08-24 08:56:41,399: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-24 08:56:41,562: INFO: main: >>>>> stage Model Training Stage completed >>>>>]
+[2025-08-24 08:56:41,563: INFO: main: >>>>> stage Model Evaluation Stage started >>>>>]
+[2025-08-24 08:56:41,578: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 08:56:41,615: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 08:56:41,655: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 08:56:41,665: INFO: common: Directory created at artifacts]
+[2025-08-24 08:56:41,675: INFO: common: Directory created at artifacts/model_evaluation]
+[2025-08-24 08:56:41,780: ERROR: main: "[('quality',)] not found in axis"]
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 63, in <module>
+    obj.initiate_model_evaluation_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelEvaluationPipeline.py", line 16, in initiate_model_evaluation_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelEvaluationPipeline.py", line 14, in initiate_model_evaluation_pipeline
+    model_evaluation.log_into_mlflow()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\components\model_evaluation.py", line 27, in log_into_mlflow
+    test_y = test_data.drop([[self.config.target_column]])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\frame.py", line 5588, in drop
+    return super().drop(
+           ^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\generic.py", line 4807, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\generic.py", line 4849, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 7136, in drop
+    raise KeyError(f"{labels[mask].tolist()} not found in axis")
+KeyError: "[('quality',)] not found in axis"
+[2025-08-24 09:00:44,546: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-24 09:00:44,553: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:00:44,558: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:00:44,563: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:00:44,584: INFO: common: Directory created at artifacts]
+[2025-08-24 09:00:44,587: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-24 09:00:44,589: INFO: data_ingestion: File already exists]
+[2025-08-24 09:00:44,622: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-24 09:00:44,624: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-24 09:00:44,625: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-24 09:00:44,662: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:00:44,693: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:00:44,774: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:00:44,790: INFO: common: Directory created at artifacts]
+[2025-08-24 09:00:44,794: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-24 09:00:44,900: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-24 09:00:44,900: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-24 09:00:44,909: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:00:44,911: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:00:44,915: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:00:44,918: INFO: common: Directory created at artifacts]
+[2025-08-24 09:00:44,920: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-24 09:00:45,030: INFO: data_transformation: Spliting completed]
+[2025-08-24 09:00:45,032: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-24 09:00:45,034: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-24 09:00:45,040: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-24 09:00:45,042: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-24 09:00:45,058: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:00:45,067: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:00:45,086: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:00:45,102: INFO: common: Directory created at artifacts]
+[2025-08-24 09:00:45,117: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-24 09:00:45,237: INFO: main: >>>>> stage Model Training Stage completed >>>>>]
+[2025-08-24 09:00:45,238: INFO: main: >>>>> stage Model Evaluation Stage started >>>>>]
+[2025-08-24 09:00:45,250: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:00:45,254: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:00:45,260: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:00:45,263: INFO: common: Directory created at artifacts]
+[2025-08-24 09:00:45,265: INFO: common: Directory created at artifacts/model_evaluation]
+[2025-08-24 09:00:53,121: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 63, in <module>
+    obj.initiate_model_evaluation_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelEvaluationPipeline.py", line 16, in initiate_model_evaluation_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelEvaluationPipeline.py", line 14, in initiate_model_evaluation_pipeline
+    model_evaluation.log_into_mlflow()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\components\model_evaluation.py", line 32, in log_into_mlflow
+    with mlflow.start_run():
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\fluent.py", line 446, in start_run
+    active_run_obj = client.create_run(
+                     ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\client.py", line 418, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 171, in create_run
+    return self.store.create_run(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 220, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 90, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\utils\rest_utils.py", line 402, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\utils\rest_utils.py", line 265, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2025-08-24 09:03:40,723: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-24 09:03:40,730: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:03:40,735: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:03:40,738: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:03:40,740: INFO: common: Directory created at artifacts]
+[2025-08-24 09:03:40,741: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-24 09:03:40,741: INFO: data_ingestion: File already exists]
+[2025-08-24 09:03:40,755: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-24 09:03:40,758: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-24 09:03:40,795: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-24 09:03:40,859: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:03:40,876: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:03:40,963: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:03:40,971: INFO: common: Directory created at artifacts]
+[2025-08-24 09:03:40,973: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-24 09:03:41,078: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-24 09:03:41,080: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-24 09:03:41,094: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:03:41,098: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:03:41,108: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:03:41,113: INFO: common: Directory created at artifacts]
+[2025-08-24 09:03:41,116: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-24 09:03:41,213: INFO: data_transformation: Spliting completed]
+[2025-08-24 09:03:41,216: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-24 09:03:41,216: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-24 09:03:41,218: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-24 09:03:41,218: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-24 09:03:41,224: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:03:41,227: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:03:41,233: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:03:41,235: INFO: common: Directory created at artifacts]
+[2025-08-24 09:03:41,239: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-24 09:03:41,432: INFO: main: >>>>> stage Model Training Stage completed >>>>>]
+[2025-08-24 09:03:41,433: INFO: main: >>>>> stage Model Evaluation Stage started >>>>>]
+[2025-08-24 09:03:41,443: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:03:41,445: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:03:41,452: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:03:41,457: INFO: common: Directory created at artifacts]
+[2025-08-24 09:03:41,460: INFO: common: Directory created at artifacts/model_evaluation]
+[2025-08-24 09:03:46,003: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 63, in <module>
+    obj.initiate_model_evaluation_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelEvaluationPipeline.py", line 16, in initiate_model_evaluation_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelEvaluationPipeline.py", line 14, in initiate_model_evaluation_pipeline
+    model_evaluation.log_into_mlflow()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\components\model_evaluation.py", line 32, in log_into_mlflow
+    with mlflow.start_run():
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\fluent.py", line 446, in start_run
+    active_run_obj = client.create_run(
+                     ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\client.py", line 418, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 171, in create_run
+    return self.store.create_run(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 220, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 90, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\utils\rest_utils.py", line 402, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\utils\rest_utils.py", line 265, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2025-08-24 09:06:24,403: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-24 09:06:24,415: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:06:24,420: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:06:24,427: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:06:24,556: INFO: common: Directory created at artifacts]
+[2025-08-24 09:06:24,559: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-24 09:06:24,575: INFO: data_ingestion: File already exists]
+[2025-08-24 09:06:24,600: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-24 09:06:24,642: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-24 09:06:24,681: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-24 09:06:24,732: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:06:24,739: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:06:24,761: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:06:24,782: INFO: common: Directory created at artifacts]
+[2025-08-24 09:06:24,789: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-24 09:06:24,922: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-24 09:06:24,929: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-24 09:06:24,940: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:06:24,964: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:06:25,005: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:06:25,027: INFO: common: Directory created at artifacts]
+[2025-08-24 09:06:25,041: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-24 09:06:25,200: INFO: data_transformation: Spliting completed]
+[2025-08-24 09:06:25,252: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-24 09:06:25,270: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-24 09:06:25,277: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-24 09:06:25,284: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-24 09:06:25,316: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:06:25,340: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:06:25,367: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:06:25,388: INFO: common: Directory created at artifacts]
+[2025-08-24 09:06:25,407: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-24 09:06:25,580: INFO: main: >>>>> stage Model Training Stage completed >>>>>]
+[2025-08-24 09:06:25,581: INFO: main: >>>>> stage Model Evaluation Stage started >>>>>]
+[2025-08-24 09:06:25,593: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:06:25,602: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:06:25,613: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:06:25,625: INFO: common: Directory created at artifacts]
+[2025-08-24 09:06:25,632: INFO: common: Directory created at artifacts/model_evaluation]
+[2025-08-24 09:06:30,195: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 63, in <module>
+    obj.initiate_model_evaluation_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelEvaluationPipeline.py", line 16, in initiate_model_evaluation_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelEvaluationPipeline.py", line 14, in initiate_model_evaluation_pipeline
+    model_evaluation.log_into_mlflow()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\components\model_evaluation.py", line 32, in log_into_mlflow
+    with mlflow.start_run():
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\fluent.py", line 446, in start_run
+    active_run_obj = client.create_run(
+                     ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\client.py", line 418, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 171, in create_run
+    return self.store.create_run(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 220, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 90, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\utils\rest_utils.py", line 402, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\utils\rest_utils.py", line 265, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2025-08-24 09:11:24,826: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-24 09:11:24,834: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:11:24,841: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:11:24,844: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:11:24,845: INFO: common: Directory created at artifacts]
+[2025-08-24 09:11:24,847: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-24 09:11:24,848: INFO: data_ingestion: File already exists]
+[2025-08-24 09:11:24,890: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-24 09:11:24,899: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-24 09:11:24,915: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-24 09:11:24,939: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:11:25,026: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:11:25,093: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:11:25,118: INFO: common: Directory created at artifacts]
+[2025-08-24 09:11:25,163: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-24 09:11:25,342: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-24 09:11:25,343: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-24 09:11:25,374: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:11:25,402: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:11:25,421: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:11:25,425: INFO: common: Directory created at artifacts]
+[2025-08-24 09:11:25,429: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-24 09:11:25,613: INFO: data_transformation: Spliting completed]
+[2025-08-24 09:11:25,617: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-24 09:11:25,619: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-24 09:11:25,622: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-24 09:11:25,623: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-24 09:11:25,647: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:11:25,661: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:11:25,681: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:11:25,691: INFO: common: Directory created at artifacts]
+[2025-08-24 09:11:25,704: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-24 09:11:25,962: INFO: main: >>>>> stage Model Training Stage completed >>>>>]
+[2025-08-24 09:11:25,966: INFO: main: >>>>> stage Model Evaluation Stage started >>>>>]
+[2025-08-24 09:11:25,986: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:11:26,011: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:11:26,022: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:11:26,027: INFO: common: Directory created at artifacts]
+[2025-08-24 09:11:26,030: INFO: common: Directory created at artifacts/model_evaluation]
+[2025-08-24 09:11:31,667: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 63, in <module>
+    obj.initiate_model_evaluation_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelEvaluationPipeline.py", line 16, in initiate_model_evaluation_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelEvaluationPipeline.py", line 14, in initiate_model_evaluation_pipeline
+    model_evaluation.log_into_mlflow()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\components\model_evaluation.py", line 36, in log_into_mlflow
+    with mlflow.start_run():
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\fluent.py", line 446, in start_run
+    active_run_obj = client.create_run(
+                     ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\client.py", line 418, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 171, in create_run
+    return self.store.create_run(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 220, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 90, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\utils\rest_utils.py", line 402, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\utils\rest_utils.py", line 265, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2025-08-24 09:16:46,329: INFO: main: >>>>> stage Data Ingestion Stage started >>>>>]
+[2025-08-24 09:16:46,339: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:16:46,346: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:16:46,353: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:16:46,355: INFO: common: Directory created at artifacts]
+[2025-08-24 09:16:46,357: INFO: common: Directory created at artifacts/data_ingestion]
+[2025-08-24 09:16:46,357: INFO: data_ingestion: File already exists]
+[2025-08-24 09:16:46,380: INFO: main: >>>>> stage Data Ingestion Stage completed >>>>>]
+[2025-08-24 09:16:46,381: INFO: main: Alhumdullillah sb okay h boss!]
+[2025-08-24 09:16:46,383: INFO: main: >>>>> stage Data Validation Stage started >>>>>]
+[2025-08-24 09:16:46,406: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:16:46,413: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:16:46,432: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:16:46,437: INFO: common: Directory created at artifacts]
+[2025-08-24 09:16:46,442: INFO: common: Directory created at artifacts/data_validation]
+[2025-08-24 09:16:46,550: INFO: main: >>>>> stage Data Validation Stage completed >>>>>]
+[2025-08-24 09:16:46,557: INFO: main: >>>>> stage Data Transformation Stage started >>>>>]
+[2025-08-24 09:16:46,570: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:16:46,575: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:16:46,582: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:16:46,587: INFO: common: Directory created at artifacts]
+[2025-08-24 09:16:46,589: INFO: common: Directory created at artifacts/data_transformation]
+[2025-08-24 09:16:46,720: INFO: data_transformation: Spliting completed]
+[2025-08-24 09:16:46,721: INFO: data_transformation: Train shape: (1199, 12)]
+[2025-08-24 09:16:46,722: INFO: data_transformation: Test  shape: (400, 12)]
+[2025-08-24 09:16:46,723: INFO: main: >>>>> stage Data Transformation Stage completed >>>>>]
+[2025-08-24 09:16:46,724: INFO: main: >>>>> stage Model Training Stage started >>>>>]
+[2025-08-24 09:16:46,731: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:16:46,734: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:16:46,738: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:16:46,741: INFO: common: Directory created at artifacts]
+[2025-08-24 09:16:46,744: INFO: common: Directory created at artifacts/model_trainer]
+[2025-08-24 09:16:46,862: INFO: main: >>>>> stage Model Training Stage completed >>>>>]
+[2025-08-24 09:16:46,863: INFO: main: >>>>> stage Model Evaluation Stage started >>>>>]
+[2025-08-24 09:16:46,871: INFO: common: Yaml file: config\config.yaml is loaded successfully]
+[2025-08-24 09:16:46,879: INFO: common: Yaml file: params.yaml is loaded successfully]
+[2025-08-24 09:16:46,890: INFO: common: Yaml file: schema.yaml is loaded successfully]
+[2025-08-24 09:16:46,901: INFO: common: Directory created at artifacts]
+[2025-08-24 09:16:46,909: INFO: common: Directory created at artifacts/model_evaluation]
+[2025-08-24 09:16:51,242: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\main.py", line 63, in <module>
+    obj.initiate_model_evaluation_pipeline()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelEvaluationPipeline.py", line 16, in initiate_model_evaluation_pipeline
+    raise e
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\pipeline\ModelEvaluationPipeline.py", line 14, in initiate_model_evaluation_pipeline
+    model_evaluation.log_into_mlflow()
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\src\DataScienceProject\components\model_evaluation.py", line 36, in log_into_mlflow
+    with mlflow.start_run():
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\fluent.py", line 446, in start_run
+    active_run_obj = client.create_run(
+                     ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\client.py", line 418, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 171, in create_run
+    return self.store.create_run(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 220, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 90, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\utils\rest_utils.py", line 402, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ABDULLAH RIZWAN\OneDrive\Desktop\Data Sciences\MLOPS\DataScienceProject\.venv\Lib\site-packages\mlflow\utils\rest_utils.py", line 265, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''

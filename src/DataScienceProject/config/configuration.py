@@ -1,7 +1,11 @@
 from tabnanny import verbose
 from src.DataScienceProject.utils.common import create_directories, read_yaml
-from src.DataScienceProject.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainerConfig
+from src.DataScienceProject.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainerConfig, ModelEvaluationConfig
 from src.DataScienceProject.constants import *
+from dotenv import load_dotenv
+import os
+
+load_dotenv(override=True)
 
 class ConfigurationManager:
     def __init__(
@@ -75,3 +79,22 @@ class ConfigurationManager:
         )
 
         return model_trainer_config
+
+    def get_model_evaluation_config(self) -> ModelEvaluationConfig:
+        config = self.config.model_evaluation
+        params = self.params.ElasticNet
+        schema = self.schema.TARGET_COLUMN
+
+        create_directories([config.root_dir],verbose=True)
+
+        model_evaluation_config = ModelEvaluationConfig(
+            root_dir = config.root_dir,
+            model_path = config.model_path,
+            test_data_path = config.test_data_path,
+            all_params = params,
+            metric_filename = config.metric_filename,
+            mlflow_uri = os.getenv('MLFLOW_TRACKING_URI'),
+            target_column = schema.name
+        )
+
+        return model_evaluation_config
